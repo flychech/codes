@@ -1,0 +1,346 @@
+/******** GENERALES ********/
+*{
+	margin: 0px;
+	font-family: Arial, Geneva, Helvetica, sans-serif;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+img{
+	vertical-align: bottom;
+}
+
+p{
+	margin: 1em 0;
+}
+
+@font-face{
+	font-family: 'EurostileNormal';
+	src:url('../font/EurostileNormal.ttf');
+}
+
+@font-face{
+	font-family: 'Opificio_rounded';
+	src:url('../font/Opificio_rounded.ttf');
+}
+
+@font-face{
+	font-family: 'Opificio_Bold';
+	src:url('../font/Opificio_Bold.ttf');
+}
+
+.opificio_bold{
+	font-family: Opificio_Bold;
+}
+
+.opificio_rounded{
+	font-family: Opificio_rounded;
+}
+
+.eurostile{
+	font-family: EurostileNormal;
+}
+
+.hide{
+	display: none;
+}
+
+.clear { clear: both; }
+
+.acoplate{
+	width: 100%;
+}
+
+.rojo_obscuro{
+	color: #B30606;
+}
+
+.fuente_gris{
+	color: #313131;
+}
+
+.strong{
+	font-weight: bold;
+}
+
+.fuente_14{
+	font-size: 14px;
+}
+
+.fuente_12{
+	font-size: 12px;
+}
+
+.fuente_11{
+	font-size: 11px;
+}
+
+.fallo-conexion{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+#reading-hm{
+	background-color: #000;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	display: none;
+	z-index: 10;
+}
+
+#div-reading-img{
+	width: 45%;
+	float: left;
+}
+
+#div-reading-text{
+	width: 45%;
+	float: right;
+	margin-top: 20%;
+	margin-right: 5%;
+	color: #767676;
+}
+
+.reading-img-hm{
+	width: 80%;
+	margin-top: 15%;
+	margin-left: 10%; 
+}
+
+#header-hm{
+	z-index: 1001;
+}
+
+/*** Transiciones de páginas ***/
+.vista{
+	position: absolute;
+	left: 0px;
+}
+
+.oculta{
+	position: absolute;
+	right: 100%;
+}
+
+#head-left{
+	float: left;
+
+}
+
+#head-center{
+	float: left;
+}
+
+#head-right{
+	float: right;
+}
+
+
+
+/****************************************** SCREEN MAYOR A 800 ********************************************************/
+@media all and (min-width: 801px) {
+
+
+
+
+
+}
+
+
+
+
+/***************************************** SCREEN MENOR A 800 PERO MAYOR A 480 ******************************************************/
+@media all and (min-width: 481px) and (max-width: 800px) {
+
+
+
+}
+
+
+
+
+/************************************ SCREEN 480 ******************************************************/
+@media screen and (max-width: 480px){
+
+/*** HEADER ***/
+#header-hm{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+	background-color: #ddd;
+	border-bottom: 2px solid #d2d2d2;
+}
+
+.iconos-head{
+	margin: 3px;
+	height: 35px;
+}
+
+#opaco-lateral{
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: 1999;
+	background-color: rgba(0,0,0,.8);
+}
+
+#menu-lateral{
+	position: fixed;
+	left: -60%;
+	width: 200px;
+	height: 100%;
+	z-index: 2000;
+	background-color: #fff;
+}
+
+#icono-buscar{
+
+}
+
+#icono-menu-lateral{
+	margin-bottom: 10px;
+	height: 20px;
+}
+
+.center-hm{
+	padding-top: 42px;
+}
+
+.container-hm{
+	margin-top: 5px;
+	background-color: #fff;
+	width: 100%;
+}
+
+/**** CATEGORÍAS ***/
+.category-div{
+	width: 46%;
+	height: 200px;
+	float: left;
+	display: block;
+	padding: 5px;
+	border: 1px solid #fff;
+}
+
+.category-div-hold{
+	border: 1px solid #f05a28;
+}
+
+.category-image{
+	width: 100%;
+}
+
+.category-name{
+	width: 100%;
+	text-align: center;
+}
+
+#reading-box-hm{
+	background-color: #fff;
+	margin: 0 auto;
+	width: 200px;
+	height: 100px;
+	margin-top: 30%;
+}
+
+#submenu-hm{
+}
+
+/*** MENU DE PRODUCTOS ***/
+.product-menu-div{
+	width: 47%;
+	height: 250px;
+	float: left;
+	display: block;
+	margin: 2px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.product-menu-image{
+	width: 100%;
+}
+
+.div-product-name-hm{
+	padding: 1px;
+	width: 100%;
+	height: 40px;
+}
+
+.product-div-hold{
+	border: 1px solid #f05a28;
+}
+
+#product-hm{
+	width: 100%;
+}
+
+/*** PRODUCTO SOLO ***/
+.slider-image-hm{
+	margin: 3px;
+	width: 100%;
+}
+
+#square-image-hm{
+	/*position: absolute;*/
+	width: 95%;
+	margin: 5px 10px 5px 10px;
+	border: 1px solid #000;
+}
+
+#product-info-hm{
+	color: #555;
+	margin: 10px;
+}
+
+#product-title-hm{
+	/*text-align: center;*/
+}
+
+#product-title-hm{
+	font-size: 20px;
+}
+
+#price-social{
+	margin: 5px 0px 10px 0px; 
+	width: 100%;
+}
+
+#price-productalone-hm{
+	margin-top: 10px;
+	width: 45%;
+	font-size: 24px;
+	float: left;
+}
+
+#social-hm{
+	width: 45%;
+	float: right;
+}
+
+#desc-product-hm p{
+	font-family: Opificio_rounded;
+}
+
+#desc-product-hm strong{
+	font-family: Opificio_Bold;
+}
+
+#desc-product-hm ul li{
+	font-family: Opificio_rounded
+}
+
+}

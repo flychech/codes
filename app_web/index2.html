@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+    Programador: Flychech
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+        <meta name="msapplication-tap-highlight" content="no" />
+        <script src="js/jquery.min.js"></script>
+        <script src="owl-carousel/owl.carousel.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            
+            $("#owl-example").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+ 
+        });
+        </script>
+        <title>Hmovil</title>
+    </head>
+    <body>
+        <div id="owl-example" class="owl-carousel">
+          <img src="http://hmovil.com/img/p/5/5/55.jpg">
+          <img src="http://hmovil.com/img/p/5/6/56.jpg">
+          <img src="http://hmovil.com/img/p/5/7/57.jpg">
+        </div>
+    </body>
+</html>
